@@ -20,7 +20,7 @@ p{margin:0 0 1em}.muted{color:var(--steel)}
 .gov a{color:#fff;text-decoration:none}.flag{display:inline-block;width:18px;height:12px;background:linear-gradient(var(--blue) 50%,var(--yellow) 50%);vertical-align:-1px;margin-right:8px}
 .mast{background:rgba(243,241,232,.94);border-bottom:1px solid var(--ink);position:sticky;top:0;z-index:40;backdrop-filter:saturate(1.2) blur(6px)}
 .mast__row{display:flex;align-items:center;gap:20px;min-height:84px}
-.seal{display:flex;align-items:center;gap:14px;text-decoration:none}.seal svg{width:46px;height:52px;flex:none}
+.seal{display:flex;align-items:center;gap:14px;text-decoration:none}.seal svg,.seal .emb{width:46px;height:54px;flex:none;object-fit:contain}
 .seal__t{font-family:var(--serif);font-size:20px;font-weight:600;line-height:1.1;font-variation-settings:"opsz" 20}.seal__t small{display:block;font:500 11px/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--steel);margin-top:4px}
 .idx{margin-left:auto;display:flex;align-items:stretch;align-self:stretch}
 .idx a{display:flex;flex-direction:column;justify-content:center;padding:0 14px;text-decoration:none;font-size:15px;font-weight:500;border-left:1px solid var(--line);position:relative}
@@ -129,3 +129,6 @@ form.mock .ok{display:none;color:var(--field);font-weight:600}form.mock.sent .ok
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 @media print{.mast,.gov,.foot,.drawer{display:none}body{background:#fff}}
 [hidden]{display:none!important}
+.emb{display:block;width:100%;height:auto}
+.hero__emb{display:flex;align-items:center;gap:16px;margin-bottom:22px}.hero__emb .emb{width:88px;height:auto}.hero__emb span{font-family:"Mono242",monospace;font-size:12px;letter-spacing:.06em;color:var(--steel);line-height:1.5}
+.foot .seal .emb{width:56px;height:66px}
